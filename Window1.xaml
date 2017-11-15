@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+	x:Class="SpiderUnleashed.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="Project - SpiderUnleashed Alpha"
+	Height="505"
+	Width="415" Background="#FFF7F6F6">
+    <Grid>
+        <TextBox
+			x:Name="tbSearchString"
+			Height="27"
+			Grid.Column="0"
+			Grid.Row="0"
+			VerticalAlignment="Top"
+			Width="214"
+			HorizontalAlignment="Right"
+			Margin="0,18,36,0" VerticalContentAlignment="Center" />
+        <Label
+			Content="Search:"
+			Height="27"
+			Width="58"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="25,18,0,0" />
+        <ComboBox
+			Height="26"
+			Width="214"
+			x:Name="cbWebsites"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,52,36,0" SelectedIndex="0" VerticalContentAlignment="Center">
+            <ComboBoxItem
+				Content="edu" />
+        </ComboBox>
+        <Label
+			Content="Domain:"
+			Width="58"
+			Height="27"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="25,52,0,0" />
+        <TextBox
+			x:Name="tbNoOfResults"
+			Height="27"
+			Width="214"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="0,87,36,0" Text="60" VerticalContentAlignment="Center" />
+        <Label
+			RenderTransformOrigin="0.5,0.5"
+			Content="No of Searches:"
+			Height="27"
+			Width="112"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="25,87,0,0" />
+        <Button
+			Width="132"
+			Height="60"
+			Content="Generate"
+			x:Name="btnGenerate"
+			Click="btnGenerate_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Bottom"
+			Margin="239,0,0,38" />
+        <GroupBox
+			Margin="30,146,32,0"
+			VerticalAlignment="Top"
+			HorizontalAlignment="Stretch"
+			Grid.Row="0"
+			Grid.Column="0"
+			Height="214.5">
+            <GroupBox.Header>
+                <CheckBox x:Name="chkProxy"
+					Content="Use Proxy"></CheckBox>
+            </GroupBox.Header>
+            <Grid IsEnabled="{Binding ElementName=chkProxy, Path=IsChecked}">
+                <Label
+					Content="Address"
+					VerticalAlignment="Stretch"
+					HorizontalAlignment="Stretch"
+					Grid.Row="0"
+					Margin="23,28,246,139"
+					Grid.Column="0" />
+                <TextBox
+					Grid.Row="0"
+					HorizontalAlignment="Stretch"
+					VerticalAlignment="Stretch"
+					x:Name="tbProxyAddress"
+					Margin="127,28,19,137"
+					Grid.Column="0" Text="172.31.100.14" VerticalContentAlignment="Center" />
+                <TextBox
+					Grid.Row="0"
+					HorizontalAlignment="Stretch"
+					VerticalAlignment="Stretch"
+					x:Name="tbProxyPort"
+					Margin="127,61,19,104"
+					Grid.Column="0" Text="3128" VerticalContentAlignment="Center" />
+                <TextBox
+					Grid.Row="0"
+					HorizontalAlignment="Stretch"
+					VerticalAlignment="Stretch"
+					x:Name="tbProxyUser"
+					Margin="127,98,19,67"
+					Grid.Column="0" Text="edcguest" VerticalContentAlignment="Center" />
+                <TextBox
+					Grid.Row="0"
+					HorizontalAlignment="Stretch"
+					VerticalAlignment="Stretch"
+					x:Name="tbProxyPass"
+					Margin="127,132,19,33"
+					Grid.Column="0" Text="edcguest" VerticalContentAlignment="Center" />
+                <Label
+					Grid.Row="0"
+					HorizontalAlignment="Stretch"
+					VerticalAlignment="Stretch"
+					Content="Port"
+					Margin="23,62,246,105"
+					Grid.Column="0" />
+                <Label
+					Content="UserName:"
+					Grid.Row="0"
+					HorizontalAlignment="Stretch"
+					VerticalAlignment="Stretch"
+					Margin="23,99,231,68"
+					Grid.Column="0" />
+                <Label
+					Grid.Row="0"
+					HorizontalAlignment="Stretch"
+					VerticalAlignment="Stretch"
+					Content="Password:"
+					Margin="23,134,231,33"
+					Grid.Column="0" />
+            </Grid>
+        </GroupBox>
+        <Label x:Name="lbNames" Content="Label" HorizontalAlignment="Left" Margin="30,376,0,0" VerticalAlignment="Top" Height="88" Width="204" Visibility="Hidden"/>
+    </Grid>
+</Window>
