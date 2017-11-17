@@ -1,14 +1,14 @@
 # Crawling Educational Websites
-<p><b><c>Aakash Chandhoke<br>
+<p><b><center>Aakash Chandhoke<br>
 Motilal Nehru National Institute of Technology, Allahabad <br>
-  aakash.chandhoke24@gmail.com</c></b><p><br/>
-<p><b><c>Akhilesh Kumar<br>
+  aakash.chandhoke24@gmail.com</center></b><p><br/>
+<p><b><center>Akhilesh Kumar<br>
 Motilal Nehru National Institute of Technology, Allahabad <br>
-   akhileshkumarhbti@gmail.com</c></b><p><br/>
+   akhileshkumarhbti@gmail.com</center></b><p><br/>
      
-     <p><b><c>Shubham Kumar><br>
+     <p><b><center> Shubham Kumar<br/>
 Motilal Nehru National Institute of Technology, Allahabad <br>
-   shubham.kumar.sci@gmail.com</c></b><p><br/>
+   shubham.kumar.sci@gmail.com</center></b><p><br/>
      
      
      
